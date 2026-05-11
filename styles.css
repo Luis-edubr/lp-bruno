@@ -623,6 +623,7 @@ a {
 }
 
 @media (max-width: 960px) {
+
   .hero,
   .section,
   .footer {
@@ -640,6 +641,15 @@ a {
     justify-content: center;
     width: 100%;
     gap: 12px;
+  }
+
+  .profile-image {
+    display: none;
+  }
+
+  .hero-stats::before,
+  .hero-stats::after {
+    display: none;
   }
 }
 
@@ -661,5 +671,13 @@ a {
     right: 16px;
     bottom: 16px;
     max-width: calc(100vw - 32px);
+  }
+  .hero-stats::before,
+  .hero-stats::after {
+    display: none;
+  }
+
+  .profile-image {
+    display: none;
   }
 }
