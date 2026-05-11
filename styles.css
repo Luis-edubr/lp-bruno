@@ -83,10 +83,16 @@ a {
 }
 
 .brand {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+}
+
+.brand img {
+  width: min(120px, 40vw);
+  height: auto;
+  display: block;
 }
 
 .nav-actions {
@@ -227,6 +233,7 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 90vh;
 }
 
 .image-glow {
@@ -369,6 +376,7 @@ a {
 .profile-image img {
   border-radius: 24px;
   box-shadow: var(--shadow);
+  max-height: 95vh;
 }
 
 .profile-content h3 {
@@ -623,12 +631,15 @@ a {
 
   .nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 12px;
   }
 
   .nav-actions {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
   }
 }
 
